@@ -1,0 +1,16 @@
+{
+  "name": "exactspace-assignment",
+  "version": "1.0.0",
+  "description": "This project is part of the ExactSpace assignment",
+  "main": "scrape.js",
+  "scripts": {
+    "start": "node scrape.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Afzaal Ahmed Khan",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "puppeteer": "^22.8.2"
+  }
+}
