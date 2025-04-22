@@ -45,13 +45,14 @@ Then open your browser and go to http://localhost:5000 to view the scraped conte
 ---
 
 
-## ⚙️ Environment Variables
+# ⚙️ Environment Variables
 
-### SCRAPE_URL: The URL to scrape. Passed as a build argument during the docker build stage.
+SCRAPE_URL: The URL to scrape. Passed as a build argument during the docker build stage.
+
+
 ---
 
 ## 📁 File Structure
-
 .
 ├── Dockerfile
 ├── scrape.js
@@ -59,7 +60,8 @@ Then open your browser and go to http://localhost:5000 to view the scraped conte
 ├── package.json
 ├── requirements.txt
 ├── .gitignore
-└── scraped_data.json (ignored)
+└── scraped_data.json  (ignored)
+
 ---
 ## 📃 Example Output
 When scraping https://linkedin.com, the output might look like:
