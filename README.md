@@ -15,6 +15,7 @@ This project demonstrates a multi-stage Docker build combining Node.js + Puppete
 - **Base Image**:
    `node:18-slim` (Scraper) + `python:3.10-slim` (Host)
 - **Final Size**: **138MB**
+![Screenshot (180)](https://github.com/user-attachments/assets/81211221-efa3-40bb-a8e6-002de36e99a9)
 
 ---
 ## 🛠️ Setup Instructions
