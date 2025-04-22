@@ -30,10 +30,8 @@ Replace https://xxxxx.com with the URL you want to scrape.
 - ARG SCRAPE_URL=https://example.com
 - ENV SCRAPE_URL=${SCRAPE_URL}
 
-  
----
 
-## Run the Docker Container
+### Run the Docker Container
 ```bash
 docker run -d -p 5000:5000 --name container01 web-scraper-host
 ```
@@ -45,7 +43,7 @@ Then open your browser and go to http://localhost:5000 to view the scraped conte
 ---
 
 
-# ⚙️ Environment Variables
+## ⚙️ Environment Variables
 
 SCRAPE_URL: The URL to scrape. Passed as a build argument during the docker build stage.
 
@@ -55,11 +53,17 @@ SCRAPE_URL: The URL to scrape. Passed as a build argument during the docker buil
 ## 📁 File Structure
 .
 ├── Dockerfile
+
 ├── scrape.js
+
 ├── server.py
+
 ├── package.json
+
 ├── requirements.txt
+
 ├── .gitignore
+
 └── scraped_data.json  (ignored)
 
 ---
@@ -68,6 +72,7 @@ When scraping https://linkedin.com, the output might look like:
 
 `{
   "heading": "Welcome to your professional community",
+  
   "title": "LinkedIn: Log In or Sign Up"
 }`
 ---
