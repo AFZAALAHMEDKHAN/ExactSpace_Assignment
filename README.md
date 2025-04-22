@@ -29,7 +29,7 @@ Replace https://xxxxx.com with the URL you want to scrape.
 ℹ️ Note: If no --build-arg is provided, the build will use the default value defined in the Dockerfile:
 - ARG SCRAPE_URL=https://example.com
 - ENV SCRAPE_URL=${SCRAPE_URL}
-
+--
 
 - ### Run the Docker Container
 ```bash
@@ -71,7 +71,8 @@ SCRAPE_URL: The URL to scrape. Passed as a build argument during the docker buil
 ## 📃 Example Output
 When scraping https://linkedin.com, the output might look like:
 
-```{
+```
+{
   "heading": "Welcome to your professional community",
   
   "title": "LinkedIn: Log In or Sign Up"
