@@ -34,7 +34,7 @@ Replace https://xxxxx.com with the URL you want to scrape.
 - ENV SCRAPE_URL=${SCRAPE_URL}
 --
 
- ### ▶️ Run the Docker Container
+ ### 🐳 Run the Docker Container
  The container listens on port **5000**, but you can map it to any port on your host using `-p <host-port>:5000`.
  
 For example:
