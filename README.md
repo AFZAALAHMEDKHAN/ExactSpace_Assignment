@@ -27,9 +27,8 @@ docker build -t web-scraper-host --build-arg SCRAPE_URL=https://xxxxxxx.com .
 📌 Replace https://xxxxx.com with the URL you want to scrape.
 
 ℹ️ Note: If no --build-arg is provided, the build will use the default value defined in the Dockerfile:
-ARG SCRAPE_URL=https://example.com
-ENV SCRAPE_URL=${SCRAPE_URL}
-
+- ARG SCRAPE_URL=https://example.com
+- ENV SCRAPE_URL=${SCRAPE_URL}
 ---
 
 ## ▶️ Run the Docker Container
@@ -37,12 +36,10 @@ ENV SCRAPE_URL=${SCRAPE_URL}
 docker run -d -p 5000:5000 --name container01 web-scraper-host
 ```
 Then open your browser and go to http://localhost:5000 to view the scraped content.
-
 ---
 
 ## ⚙️ Environment Variables
 SCRAPE_URL: The URL to scrape. Passed as a build argument during the docker build stage.
-
 ---
 
 ## 📁 File Structure
