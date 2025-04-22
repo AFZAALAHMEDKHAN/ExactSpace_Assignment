@@ -11,17 +11,18 @@ This project demonstrates a multi-stage Docker build combining Node.js + Puppete
 - Final multi-stage Docker image is clean, production-ready, and only **138MB**.
 
 ---
-
-📦 Docker Image
-Base Image: node:18-slim (Scraper) + python:3.10-slim (Host)
-
-Final Size: 138MB
+## 📦 Docker Image
+- **Base Image**:
+   `node:18-slim` (Scraper) + `python:3.10-slim` (Host)
+- **Final Size**: **138MB**
 
 ---
-🛠️ Setup Instructions
-🏗️ Build Docker Image
+## 🛠️ Setup Instructions
 
+### 🏗️ Build Docker Image
+```bash
 docker build -t web-scraper-host --build-arg SCRAPE_URL=https://xxxxxxx.com .
+```
 
 📌 Replace https://xxxxx.com with the URL you want to scrape.
 
@@ -31,19 +32,20 @@ ENV SCRAPE_URL=${SCRAPE_URL}
 
 ---
 
-▶️ Run the Docker Container
+## ▶️ Run the Docker Container
+```bash
 docker run -d -p 5000:5000 --name container01 web-scraper-host
-
+```
 Then open your browser and go to http://localhost:5000 to view the scraped content.
 
 ---
 
-⚙️ Environment Variables
+## ⚙️ Environment Variables
 SCRAPE_URL: The URL to scrape. Passed as a build argument during the docker build stage.
 
 ---
 
-📁 File Structure
+## 📁 File Structure
 
 .
 ├── Dockerfile
@@ -54,14 +56,15 @@ SCRAPE_URL: The URL to scrape. Passed as a build argument during the docker buil
 ├── .gitignore
 └── scraped_data.json (ignored)
 ---
-📃 Example Output
+## 📃 Example Output
 When scraping https://linkedin.com, the output might look like:
-{
+
+`{
   "heading": "Welcome to your professional community",
   "title": "LinkedIn: Log In or Sign Up"
-}
+}`
 ---
-🛑 Notes
+## 🛑 Notes
 .gitignore includes:
  1. scraped_data.json
  2. node_modules/
