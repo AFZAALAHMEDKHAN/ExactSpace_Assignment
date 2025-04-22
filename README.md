@@ -4,11 +4,11 @@ This project demonstrates a multi-stage Docker build combining Node.js + Puppete
 
 ---
 ## 🚀 Features
-- Scrapes data (page title and first heading) from a URL using Puppeteer
+- Scrapes data (page title and first heading) from a URL using **Puppeteer**
 
-- Serves the scraped data as JSON via a Flask web server
+- Serves the scraped data as **JSON** via a **Flask** web server
 
-- Final Docker image is lean and production-ready
+- Final multi-stage Docker image is clean, production-ready, and only **138MB**.
 
 ---
 
