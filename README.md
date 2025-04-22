@@ -19,7 +19,7 @@ This project demonstrates a multi-stage Docker build combining Node.js + Puppete
 ---
 ## 🛠️ Setup Instructions
 
-- ### Build Docker Image
+ ### 🔧 Build Docker Image
 ```bash
 docker build -t web-scraper-host --build-arg SCRAPE_URL=https://xxxxxxx.com .
 ```
@@ -31,7 +31,7 @@ Replace https://xxxxx.com with the URL you want to scrape.
 - ENV SCRAPE_URL=${SCRAPE_URL}
 --
 
-- ### Run the Docker Container
+ ### ▶️ Run the Docker Container
 ```bash
 docker run -d -p 5000:5000 --name container01 web-scraper-host
 ```
