@@ -35,8 +35,12 @@ Replace https://xxxxx.com with the URL you want to scrape.
 --
 
  ### ▶️ Run the Docker Container
+ > The container listens on port **5000**, but you can map it to any port on your host using `-p <host-port>:5000`.
+
+For example:
+
 ```bash
-docker run -d -p 5000:5000 --name container01 web-scraper-host
+docker run -d -p 8080:5000 --name container01 web-scraper-host
 ```
 
 
