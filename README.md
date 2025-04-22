@@ -3,12 +3,12 @@
 This project demonstrates a multi-stage Docker build combining Node.js + Puppeteer + Chromium for web scraping and Python + Flask for hosting the scraped content. The final Docker image is only 138MB.
 
 ---
-🚀 Features
-Scrapes data (page title and first heading) from a URL using Puppeteer
+## 🚀 Features
+- Scrapes data (page title and first heading) from a URL using Puppeteer
 
-Serves the scraped data as JSON via a Flask web server
+- Serves the scraped data as JSON via a Flask web server
 
-Final Docker image is lean and production-ready
+- Final Docker image is lean and production-ready
 
 ---
 
