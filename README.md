@@ -47,7 +47,7 @@ Then open your browser and go to http://localhost:5000 to view the scraped conte
 
 ## ⚙️ Environment Variables
 
-SCRAPE_URL: The URL to scrape. Passed as a build argument during the docker build stage.
+### SCRAPE_URL: The URL to scrape. Passed as a build argument during the docker build stage.
 ---
 
 ## 📁 File Structure
