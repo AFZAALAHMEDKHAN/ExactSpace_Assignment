@@ -25,6 +25,8 @@ The URL to scrape can be passed during build time as a build argument:
 docker build -t web-scraper-host --build-arg SCRAPE_URL=https://xxxxxxx.com .
 ```
 Replace https://xxxxx.com with the URL you want to scrape.
+
+
 ℹ️ This value is baked into the image and cannot be changed at runtime. If you want to dynamically scrape different URLs, rebuild the image with a new --build-arg.
 
 ℹ️ Note: If no --build-arg is provided, the build will use the default value defined in the Dockerfile:
