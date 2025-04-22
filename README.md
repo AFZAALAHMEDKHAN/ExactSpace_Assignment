@@ -40,11 +40,11 @@ Replace https://xxxxx.com with the URL you want to scrape.
 For example:
 
 ```bash
-docker run -d -p 6000:5000 --name container01 web-scraper-host
+docker run -d -p 7000:5000 --name container01 web-scraper-host
 ```
 
 
-Then open your browser and go to http://localhost:6000 to view the scraped content.
+Then open your browser and go to http://localhost:7000 to view the scraped content.
 
 
 ---
