@@ -35,7 +35,10 @@ docker build -t web-scraper-host --build-arg SCRAPE_URL=https://xxxxxxx.com .
 ```bash
 docker run -d -p 5000:5000 --name container01 web-scraper-host
 ```
+
+
 Then open your browser and go to http://localhost:5000 to view the scraped content.
+
 ---
 
 ## ⚙️ Environment Variables
